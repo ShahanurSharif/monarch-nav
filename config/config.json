@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "monarch-365-nav-web-part": {
+    "monarch-360-nav-application-customizer": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/monarch365Nav/Monarch365NavWebPart.js",
-          "manifest": "./src/webparts/monarch365Nav/Monarch365NavWebPart.manifest.json"
+          "entrypoint": "./lib/extensions/monarch360Nav/Monarch360NavApplicationCustomizer.js",
+          "manifest": "./src/extensions/monarch360Nav/Monarch360NavApplicationCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "Monarch365NavWebPartStrings": "lib/webparts/monarch365Nav/loc/{locale}.js"
+    "Monarch360NavApplicationCustomizerStrings": "lib/extensions/monarch360Nav/loc/{locale}.js"
   }
 }
