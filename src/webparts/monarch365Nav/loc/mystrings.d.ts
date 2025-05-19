@@ -11,6 +11,7 @@ declare interface IMonarch365NavWebPartStrings {
   AppOfficeEnvironment: string;
   AppOutlookEnvironment: string;
   UnknownEnvironment: string;
+  TitleFieldLabel: string;
 }
 
 declare module 'Monarch365NavWebPartStrings' {

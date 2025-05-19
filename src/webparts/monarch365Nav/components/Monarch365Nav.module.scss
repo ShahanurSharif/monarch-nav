@@ -1,34 +1,57 @@
 @import '~@fluentui/react/dist/sass/References.scss';
 
 .monarch365Nav {
-  overflow: hidden;
-  padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
-  }
-}
-
-.welcome {
-  text-align: center;
-}
-
-.welcomeImage {
   width: 100%;
-  max-width: 420px;
-}
+  background-color: #f0f0f0;
 
-.links {
-  a {
-    text-decoration: none;
-    color: "[theme:link, default:#03787c]";
-    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+  // Dark theme support
+  &.darkTheme {
+    background-color: #333;
+    color: #fff;
+
+    .navItem,
+    .subNavItem {
+      color: #fff;
+      &:hover {
+        background-color: #444;
+      }
+    }
+  }
+
+  .navContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  // Main navigation items
+  .navItem {
+    color: #333;
+    font-weight: 600;
+    padding: 0 16px;
+    height: 48px;
+    line-height: 48px;
+    transition: background-color 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
-      color: "[theme:linkHovered, default: #014446]";
-      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+
+    &.active {
+      border-bottom: 3px solid #0078d4;
+    }
+  }
+
+  // Dropdown menu items
+  .subNavItem {
+    color: #333;
+    padding: 8px 16px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #e0e0e0;
+      text-decoration: none;
     }
   }
 }
