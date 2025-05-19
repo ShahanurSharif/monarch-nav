@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "monarch-365-nav-client-side-solution",
-    "id": "3138f026-01b5-4b9c-bca0-3d6ec9a96cda",
+    "name": "monarch-360-nav-client-side-solution",
+    "id": "389fd6f8-5928-4604-8113-3427fbb4e56c",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "Monarch365Nav description"
+        "default": "Monarch360Nav description"
       },
       "longDescription": {
-        "default": "Monarch365Nav description"
+        "default": "Monarch360Nav description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
@@ -27,14 +27,20 @@
     },
     "features": [
       {
-        "title": "monarch-365-nav Feature",
-        "description": "The feature that activates elements of the monarch-365-nav solution.",
-        "id": "1811e60b-1b9f-4f42-9a33-7e065d8af201",
-        "version": "1.0.0.0"
+        "title": "Application Extension - Deployment of custom action",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "ad12e488-1b87-4a84-aca8-16d98e76d465",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/monarch-365-nav.sppkg"
+    "zippedPackage": "solution/monarch-360-nav.sppkg"
   }
 }

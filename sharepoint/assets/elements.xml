@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="Monarch360Nav"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="37197790-854c-4670-9ab7-2454e53eba3c"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
