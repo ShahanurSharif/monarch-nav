@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "monarch-365-nav-client-side-solution",
+    "id": "3138f026-01b5-4b9c-bca0-3d6ec9a96cda",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Monarch365Nav description"
+      },
+      "longDescription": {
+        "default": "Monarch365Nav description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "monarch-365-nav Feature",
+        "description": "The feature that activates elements of the monarch-365-nav solution.",
+        "id": "1811e60b-1b9f-4f42-9a33-7e065d8af201",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/monarch-365-nav.sppkg"
+  }
+}

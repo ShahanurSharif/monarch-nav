@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "monarch-365-nav-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/monarch365Nav/Monarch365NavWebPart.js",
+          "manifest": "./src/webparts/monarch365Nav/Monarch365NavWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Monarch365NavWebPartStrings": "lib/webparts/monarch365Nav/loc/{locale}.js"
+  }
+}

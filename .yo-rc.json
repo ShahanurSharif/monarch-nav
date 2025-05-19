@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.15.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "monarch-365-nav",
+    "libraryId": "3138f026-01b5-4b9c-bca0-3d6ec9a96cda",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Monarch365Nav",
+    "solutionShortDescription": "Monarch365Nav description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
