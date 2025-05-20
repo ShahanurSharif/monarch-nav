@@ -1,0 +1,34 @@
+todo 
+1. m365 setup not working (CLI for Microsoft 365 permissions/Grant admin consent in Azure AD)
+2. m365 login not working
+3. add app not showing the app installed (permission issues)
+4. need Azure Active Directory permission for powershell and CLI
+
+
+Display name
+:
+PnPPowerShellApp
+Application (client) ID
+:
+e3878ffc-ee1c-47b7-86f7-01765c24fc07
+Object ID
+:
+9966daa3-7143-4300-a406-c6dfc1a0d4b9
+Directory (tenant) ID
+:
+0f2587a8-5a33-4f75-9f71-5f7accedb502
+Supported account types
+:
+My organization only
+Client credentials
+:
+Add a certificate or secret
+Redirect URIs
+:
+0 web, 0 spa, 1 public client
+Application ID URI
+:
+Add an Application ID URI
+Managed application in local directory
+:
+PnPPowerShellApp

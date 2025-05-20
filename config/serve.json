@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://monarch360demo.sharepoint.com/sites/shan/SitePages/Home.aspx",
       "customActions": {
         "37197790-854c-4670-9ab7-2454e53eba3c": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -15,7 +15,7 @@
       }
     },
     "monarch360Nav": {
-      "pageUrl": "https://{tenantDomain}/SitePages/myPage.aspx",
+      "pageUrl": "https://monarch360demo.sharepoint.com/sites/shan/SitePages/Home.aspx",
       "customActions": {
         "37197790-854c-4670-9ab7-2454e53eba3c": {
           "location": "ClientSideExtension.ApplicationCustomizer",
