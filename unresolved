@@ -32,3 +32,63 @@ Add an Application ID URI
 Managed application in local directory
 :
 PnPPowerShellApp
+
+
+
+“Can I make the SharePoint top navigation’s color and font style change dynamically via a dropdown in the built-in menu edit panel (the HorizontalNav8EditLink panel)?”
+
+Short Answer
+No, not out-of-the-box.
+SharePoint’s built-in navigation menu edit panel (HorizontalNav8EditLink) does not natively allow you to control color, font, or appearance—it is only for editing links, not styles.
+
+Details & Realistic Options
+### What the Edit Panel (HorizontalNav8EditLink) Actually Supports:
+You can: Add, remove, rename, or reorder links.
+
+You cannot: Change styles, fonts, or add custom controls in this panel.
+
+### Why?
+The edit panel is controlled by SharePoint and is not extensible—Microsoft doesn’t provide hooks or APIs to inject your own custom controls (like a color picker or font dropdown) into this menu.
+
+What Are Your Real Options?
+Option 1: Custom “Settings” Panel in Your Extension (Recommended)
+You CAN:
+
+Build your own custom edit/settings panel (React modal, sidebar, or dropdown) inside your SPFx extension.
+
+Store user choices (color, font) in:
+
+SharePoint property bag,
+
+A SharePoint list,
+
+Or user profile properties.
+
+Dynamically update your navigation’s color/font based on the stored setting.
+
+How this works:
+
+When users want to edit appearance, they use your custom settings panel (not the built-in menu edit).
+
+You apply the chosen color/font in your React component and update the nav instantly.
+
+Option 2: SharePoint “Change the Look”
+You can use the built-in “Change the look” settings (Settings gear > Change the look > Theme), which lets site owners pick a site-wide color scheme and fonts—but this applies to the whole site, not just the navigation, and is not dynamic/user-specific.
+
+Option 3: SPFx Property Pane (for Web Parts Only)
+For Web Parts, you can use the property pane to provide dropdowns for colors/fonts—but Application Customizers (nav extensions) don’t have property panes in the UI.
+
+Summary Table
+Feature	Built-in Edit Panel	Custom Extension Panel	“Change the Look”
+Edit nav links	✅	✅ (if you build it)	❌
+Edit color/font from dropdown	❌	✅ (fully customizable)	❌ (only site-wide)
+User-specific appearance	❌	✅ (if coded this way)	❌
+Site-wide theme	❌	❌	✅
+
+Conclusion
+You CANNOT do it from the built-in SharePoint nav edit menu.
+You CAN build this into your own SPFx extension!
+If you want, I can give you a sample React code that shows a color and font picker for your nav bar, stores the selection (e.g., in local storage or a SharePoint list), and updates the style live.
+
+Would you like a step-by-step example of that custom settings panel in your extension?
+Let me know, and I’ll walk you through it!
