@@ -1,1 +1,1 @@
-// A file is required to be in the root of the /src directory by the TypeScript compiler
+export { default as Monarch360NavApplicationCustomizer } from './extensions/monarch360Nav/Monarch360NavApplicationCustomizer';

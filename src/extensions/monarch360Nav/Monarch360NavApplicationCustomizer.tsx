@@ -26,7 +26,10 @@ export default class Monarch360NavApplicationCustomizer
           { onDispose: this._onDispose }
       );
       if (this._topPlaceholder && this._topPlaceholder.domElement) {
-        ReactDOM.render(<CustomNav context={this.context} />, this._topPlaceholder.domElement);
+        ReactDOM.render(
+            <CustomNav context={this.context} />,
+            this._topPlaceholder.domElement
+        );
       }
     }
   }
